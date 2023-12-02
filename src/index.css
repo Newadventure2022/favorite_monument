@@ -153,7 +153,7 @@ footer {
 }
 .fw-main-row-2 {
   background-attachment: scroll;
-  background-image: url(/images/kam-7.jpeg);
+  background-image: url(/images/art_sciences2.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -262,7 +262,7 @@ footer {
     padding-left: 2rem;
   }
   .fw-main-row {
-    background-image: url(/images/art_sciences2.jpeg);
+    background-image: url(/images/art_sciences3.jpeg);
   }
 }
 @media (max-width: 390px) {
