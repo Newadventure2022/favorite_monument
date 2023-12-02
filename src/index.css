@@ -111,7 +111,7 @@ footer {
 }
 .fw-main-row {
   background-attachment: scroll;
-  background-image: url(/images/kam-new.JPG);
+  background-image: url(/images/art_sciences1.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -262,7 +262,7 @@ footer {
     padding-left: 2rem;
   }
   .fw-main-row {
-    background-image: url(/images/kam-5.JPG);
+    background-image: url(/images/art_sciences2.jpeg);
   }
 }
 @media (max-width: 390px) {
@@ -271,7 +271,7 @@ footer {
     padding-left: 2rem;
   }
   .fw-main-row {
-    background-image: url(/images/kameron-locke_3236.jpeg);
+    background-image: url(/images/art_sciences3.jpeg);
   }
 
   .parallax-grid {
