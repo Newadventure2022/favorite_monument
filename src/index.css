@@ -112,7 +112,7 @@ footer {
 }
 .fw-main-row {
   background-attachment: scroll;
-  background-image: url(/images/art_sciences3.jpeg);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/136/original/statue-of-liberty-1075752_1280.jpg?1704981480);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -155,7 +155,7 @@ footer {
 }
 .fw-main-row-2 {
   background-attachment: scroll;
-  background-image: url(/images/art_sciences1.jpeg);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/134/original/istockphoto-93460059-612x612.jpg?1704981461);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
