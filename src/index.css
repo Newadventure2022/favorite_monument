@@ -2,7 +2,7 @@
   --primary-font: "Spline Sans Mono", monospace;
   --secondary-font: "Source Sans 3", sans-serif;
   --third-font: "Inter", sans-serif;
-  --primary-color: #688fc2;
+  --primary-color: #4e71a1;
   --secondary-color: #000;
   --third-color: #fff;
   --fourth-color: #fffbe1;
@@ -54,11 +54,12 @@ footer {
 }
 
 .title h1 {
+  padding-top: 5rem;
   text-shadow: var(--text-shadow);
   color: var(--third-color);
   font-size: 5rem;
   padding-left: 5rem;
-  animation: animate_title 3s linear;
+  animation: animate_title 5s linear;
 }
 @keyframes animate_title {
   0% {
@@ -96,7 +97,6 @@ footer {
 #frontlashID {
   position: fixed;
   display: block;
-  top: 7rem;
   left: 0;
   width: 100%;
   height: 130%;
@@ -258,18 +258,13 @@ footer {
   .title h1 {
     font-size: 3rem;
     padding-left: 2rem;
-  }
-  .fw-main-row {
-    background-image: url(/images/art_sciences3.jpeg);
+    padding-top: 2rem;
   }
 }
 @media (max-width: 390px) {
   .title h1 {
     font-size: 3rem;
     padding-left: 2rem;
-  }
-  .fw-main-row {
-    background-image: url(/images/art_sciences3.jpeg);
   }
 
   .parallax-grid {
