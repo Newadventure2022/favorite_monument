@@ -10,12 +10,338 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@200;300;400;500;600;700&family=Italiana&family=Playfair+Display:wght@700;800;900&family=Roboto:wght@100;300;400;500;700&family=Source+Sans+3:wght@300;400&family=Spline+Sans+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@200;300;400;500;600;700&family=Italiana&family=Playfair+Display:wght@700;800;900&family=Roboto:wght@100;300;400;500;700&family=Source+Sans+3:wght@300;400&family=Spline+Sans+Mono:ital,wght@0,400;0,500;1,400;1,500&family=Abhaya+Libre:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/c6f2297398.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="src/index.css" />
+    <style>
+        :root {
+            --primary-font: "Spline Sans Mono", monospace;
+            --secondary-font: "Source Sans 3", sans-serif;
+            --third-font: "Abhaya Libre", sans-serif;
+            --primary-color: #4e71a1;
+            --secondary-color: #000;
+            --third-color: #fff;
+            --fourth-color: #fffbe1;
+            --fifth-color: #f6d677;
+            --text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: var(--primary-color);
+            margin: 0 auto;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        h1 {
+            font-family: var(--third-font);
+        }
+
+        img {
+            width: 100%;
+            max-height: 100%;
+        }
+
+        footer {
+            box-shadow: 0px -5px 12px rgba(0, 0, 0, 0.1);
+            padding: 2rem 0;
+        }
+
+        .logo {
+            max-width: 4rem;
+            height: 100%;
+        }
+
+        .logo img {
+            border: var(--third-color) solid 1px;
+            border-radius: 0.5rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            overflow-x: hidden;
+            background-color: var(--primary-color);
+            padding: 0;
+        }
+
+        .title h1 {
+            padding-top: 5rem;
+            text-shadow: var(--text-shadow);
+            color: var(--third-color);
+            font-size: 6rem;
+            text-align: center;
+            animation: animate_title 3s linear;
+        }
+
+        @keyframes animate_title {
+            0% {
+                margin-bottom: -50px;
+                letter-spacing: 50px;
+                color: var(--primary-color);
+            }
+
+            50% {
+                margin-bottom: -50px;
+                letter-spacing: 1px;
+                color: var(--third-color);
+            }
+
+            95% {
+                margin-bottom: -50px;
+            }
+
+            100% {
+                margin-bottom: -50px;
+            }
+        }
+
+        .parallax-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .parallax-child-section {
+            clip: rect(0, auto, auto, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #frontlashID {
+            position: fixed;
+            display: block;
+            left: 0;
+            width: 100%;
+            height: 130%;
+            transform: translateZ(0);
+            will-change: transform;
+            z-index: 1;
+        }
+
+        .fw-main-row {
+            background-attachment: scroll;
+            background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/136/original/statue-of-liberty-1075752_1280.jpg?1704981480);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax-section-2 {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+        }
+
+        .parallax-child-section-2 {
+            clip: rect(0, auto, auto, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 90vh;
+        }
+
+        #frontlashID-2 h2 {
+            font-size: 3.5rem;
+            margin-top: 5rem;
+        }
+
+        #frontlashID-2 h3 {
+            font-size: 2.5rem;
+        }
+
+        #frontlashID-2 p {
+            font-size: 1.5rem;
+        }
+
+        #frontlashID-2 h2,
+        #frontlashID-2 h3,
+        #frontlashID-2 p {
+            color: var(--third-color);
+            font-family: var(--third-font);
+            opacity: 0.7;
+            text-shadow: var(--text-shadow);
+        }
+
+        #frontlashID-2 {
+            position: fixed;
+            display: block;
+            top: 1rem;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: translateZ(0);
+            will-change: transform;
+            z-index: 1;
+        }
+
+        .text-wrapper {
+            position: relative;
+            text-align: center;
+        }
+
+        .fw-main-row-2 {
+            background-attachment: scroll;
+            background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/134/original/istockphoto-93460059-612x612.jpg?1704981461);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .history {
+            font-family: abhaya;
+            padding-top: 5rem;
+            width: 100%;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .parallax-grid {
+            color: var(--third-color);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 100%;
+            margin: 3rem;
+            padding-top: 15rem;
+            text-align: center;
+        }
+
+        .parallax-links {
+            border: solid 2px transparent;
+            color: var(--third-color);
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            padding: 5px;
+            text-decoration: none;
+            transition: all 100ms ease-in-out;
+        }
+
+        .parallax-links:hover {
+            border: solid 2px rgba(255, 255, 255, 0.4);
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .social-links {
+            padding-right: 1rem;
+            text-align: center;
+            flex-direction: row;
+        }
+
+        .social-links a {
+            font-size: 25px;
+            margin: 0 20px;
+            padding: 5px 10px;
+            color: var(--third-color);
+            border: var(--third-color) solid 1px;
+            background-color: var(--primary-color);
+            border-radius: 50px;
+            transition: all 100ms ease-in-out;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+            background-color: var(--third-color);
+        }
+
+        .footer-links {
+            color: var(--third-color);
+        }
+
+        .credit {
+            color: var(--third-color);
+            font-size: small;
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .credit a {
+            color: var(--third-color);
+            text-decoration: none;
+        }
+
+        .credit a:hover {
+            text-decoration: underline;
+            transition: all 100ms ease-in-out;
+        }
+
+        .id-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .id-grid img {
+            max-width: 50%;
+        }
+
+        @media (max-width: 1100px) {
+            .title h1 {
+                padding-left: 5rem;
+            }
+        }
+
+        @media (max-width: 787px) {
+            .parallax-grid {
+                gap: 1rem;
+                margin: 2rem;
+                padding-top: 15rem;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .parallax-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                max-width: 100%;
+                margin: 2rem;
+                padding-top: 5rem;
+            }
+
+            .title h1 {
+                font-size: 3rem;
+                padding-left: 2rem;
+                padding-top: 2rem;
+            }
+        }
+
+        @media (max-width: 390px) {
+            .title h1 {
+                font-size: 3rem;
+                padding-left: 2rem;
+            }
+
+            .parallax-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                margin: 0 auto;
+                padding: 0.5rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -31,9 +357,23 @@
             </div>
         </div>
 
-
-        <div class="parallax-grid">
-
+        <div class="history">
+            <p>She is an icon, a national treasure, and one of the most recognizable figures in the world. Each year
+                millions who
+                cherish her ideals make the journey to experience her history and grandeur in person. She is the Statue
+                of Liberty, a
+                symbol of freedom, inspiration, and hope.</p>
+            <p>It was 1865 when Frenchman Édouard de Laboulaye proposed the idea of presenting a
+                monumental
+                gift from
+                the people of
+                France to the people of the United States. An ardent supporter of America, Laboulaye wished to
+                commemorate the
+                centennial of the Declaration of Independence as well as celebrate the close relationship between France
+                and America. He
+                was equally moved by the recent abolition of slavery in the U.S., which furthered America’s ideals of
+                liberty and
+                freedom.</p>
         </div>
 
         <div class="parallax-section-2">
