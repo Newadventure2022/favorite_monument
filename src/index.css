@@ -2,10 +2,11 @@
   --primary-font: "Spline Sans Mono", monospace;
   --secondary-font: "Source Sans 3", sans-serif;
   --third-font: "Inter", sans-serif;
-  --primary-color: #f6d677;
+  --primary-color: #688fc2;
   --secondary-color: #000;
   --third-color: #fff;
   --fourth-color: #fffbe1;
+  --fifth-color: #f6d677;
   --text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -51,13 +52,6 @@ footer {
   background-color: var(--primary-color);
   padding: 0;
 }
-.dropdown-menu {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-.dropdown-item {
-  color: var(--third-color);
-}
 
 .title h1 {
   text-shadow: var(--text-shadow);
@@ -88,7 +82,7 @@ footer {
 .parallax-section {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 }
 .parallax-child-section {
   clip: rect(0, auto, auto, 0);
@@ -139,7 +133,6 @@ footer {
   color: var(--third-color);
   font-family: var(--primary-font);
   opacity: 0.7;
-  text-align: center;
   text-shadow: var(--text-shadow);
 }
 #frontlashID-2 {
@@ -152,6 +145,10 @@ footer {
   transform: translateZ(0);
   will-change: transform;
   z-index: 1;
+}
+.text-wrapper {
+  text-align: right;
+  padding-right: 3rem;
 }
 .fw-main-row-2 {
   background-attachment: scroll;
