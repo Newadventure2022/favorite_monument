@@ -12,8 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@200;300;400;500;600;700&family=Italiana&family=Playfair+Display:wght@700;800;900&family=Roboto:wght@100;300;400;500;700&family=Source+Sans+3:wght@300;400&family=Spline+Sans+Mono:ital,wght@0,400;0,500;1,400;1,500&family=Abhaya+Libre:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c6f2297398.js" crossorigin="anonymous"></script>
     <style>
         :root {
@@ -27,6 +27,7 @@
             --fifth-color: #f6d677;
             --text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
             --box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            --bs-accordion-btn-color: var(#f6d677);
         }
 
         *,
@@ -295,6 +296,16 @@
 
 
 
+        .accordion-item {
+            background: var(--primary-color);
+            color: var(--third-color);
+        }
+
+        .accordion button {
+            color: var(--primary-color);
+            background: var(--third-color);
+        }
+
         .parallax-grid {
             color: var(--third-color);
             display: grid;
@@ -377,6 +388,14 @@
             max-width: 50%;
         }
 
+
+
+        @media (min-width: 1100px) {
+            .history-2 h3 {
+                padding-top: 4rem;
+            }
+        }
+
         @media (max-width: 1100px) {
             .title h1 {
                 padding-left: 5rem;
@@ -412,7 +431,7 @@
             }
 
             .history-3 {
-                margin-top: 45rem;
+                margin-top: 18rem;
 
             }
 
@@ -534,198 +553,273 @@
         </div>
 
         <div class="history-3">
-            <h3>Question: </h3>
-            <h4>Do you think the United States of America is upholding the values for which the Statue of
-                liberty stands?</h4>
-            <h5>ChatGPT:</h5>
-            <p>The question of whether the United States of America is upholding the values for which the Statue of
-                Liberty stands is a
-                complex and subjective matter that can be viewed from different perspectives. It's important to note
-                that opinions on
-                this topic can vary widely depending on individual beliefs, political views, and the specific issues
-                under
-                consideration. Here are some key points to consider:</p>
-            <h5>1. Freedom and Liberty:</h5>
-            <p>The United States has a long history of championing individual freedoms and civil liberties. The country
-                has made
-                significant progress in areas such as free speech, religious freedom, and equal rights for various
-                groups. However,
-                there are ongoing debates and challenges related to issues such as privacy rights, immigration policies,
-                and civil
-                liberties, which some argue may infringe upon the principles of liberty.
-            </p>
-            <h5>2. Justice for All:</h5>
-            <p>The U.S. legal system is founded on the principle of justice for all, and it includes a robust framework
-                for the
-                protection of individual rights. Nevertheless, concerns exist about issues like racial disparities in
-                the criminal
-                justice system, access to affordable healthcare and education, and income inequality, which some argue
-                may hinder the
-                attainment of justice for all.</p>
-            <h5>3. Immigration and Asylum:</h5>
-            <p>The Statue of Liberty has long been associated with welcoming immigrants and refugees to the United
-                States. Immigration
-                policies and practices in the U.S. have been a subject of debate and contention. Some argue that
-                restrictive immigration
-                policies have run counter to the statue's message of inclusivity, while others believe that national
-                security concerns
-                must be balanced with humanitarian values.</p>
-            <h5>4. Diplomacy and International Relations:</h5>
-            <p>The statue also symbolizes international friendship and cooperation. The U.S. has a role in global
-                diplomacy and
-                international relations, and its approach to foreign policy can impact perceptions of its commitment to
-                these values.
-                Some may argue that certain foreign policies and actions have strained international relationships and
-                raised questions
-                about the nation's commitment to peace and diplomacy.
-                In conclusion, whether the United States fully upholds the values represented by the Statue of Liberty
-                is a matter of
-                ongoing debate and interpretation. The extent to which the nation aligns with these values can vary
-                depending on one's
-                perspective and specific issues under consideration. Public discourse, political action, and civic
-                engagement play
-                crucial roles in shaping the country's trajectory in upholding these values.</p>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            <h5>
+                                Do you think the United States of America is upholding the values for which the Statue
+                                of
+                                liberty stands?
+                            </h5>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <h5>ChatGPT:</h5>
 
-            <h3>Truth matters and without it we live in a world of illusion and delusion.
-                <h3>United we stand: divided we
-                    fall.</h3>
-            </h3>
-            <h5>ChatGPT:</h5>
-            <p>You've articulated a fundamental truth about the importance of truth itself and the unity of a nation.
-                Truth is the
-                cornerstone of a functioning democracy and a just society. Without truth, it becomes challenging to make
-                informed
-                decisions, hold leaders accountable, and foster trust among citizens. Living in a world of illusion and
-                delusion can
-                lead to confusion, division, and a breakdown of societal cohesion.
-                The phrase "United we stand, divided we fall" underscores the significance of unity and solidarity among
-                citizens. When
-                people come together, they can address common challenges, work towards shared goals, and strengthen the
-                bonds that hold
-                a society together. Division, on the other hand, can weaken a nation's resilience and ability to face
-                external and
-                internal threats.
-                In today's world, where information can be manipulated, and misinformation can spread rapidly, the
-                pursuit of truth and
-                unity becomes even more crucial. It requires a collective commitment to critical thinking,
-                fact-checking, and open and
-                respectful dialogue. It also calls for leaders who prioritize honesty, transparency, and the well-being
-                of all citizens.
-                Ultimately, a society that values truth and unity is better equipped to address its challenges, uphold
-                its democratic
-                principles, and work towards a future that reflects the shared aspirations and values of its people.</p>
+                            <p>The question of whether the United States of America is upholding the values for which
+                                the Statue of
+                                Liberty stands is a
+                                complex and subjective matter that can be viewed from different perspectives. It's
+                                important to note
+                                that opinions on
+                                this topic can vary widely depending on individual beliefs, political views, and the
+                                specific issues
+                                under
+                                consideration. Here are some key points to consider:</p>
+                            <h5>1. Freedom and Liberty:</h5>
+                            <p>The United States has a long history of championing individual freedoms and civil
+                                liberties. The country
+                                has made
+                                significant progress in areas such as free speech, religious freedom, and equal rights
+                                for various
+                                groups. However,
+                                there are ongoing debates and challenges related to issues such as privacy rights,
+                                immigration policies,
+                                and civil
+                                liberties, which some argue may infringe upon the principles of liberty.
+                            </p>
+                            <h5>2. Justice for All:</h5>
+                            <p>The U.S. legal system is founded on the principle of justice for all, and it includes a
+                                robust framework
+                                for the
+                                protection of individual rights. Nevertheless, concerns exist about issues like racial
+                                disparities in
+                                the criminal
+                                justice system, access to affordable healthcare and education, and income inequality,
+                                which some argue
+                                may hinder the
+                                attainment of justice for all.</p>
+                            <h5>3. Immigration and Asylum:</h5>
+                            <p>The Statue of Liberty has long been associated with welcoming immigrants and refugees to
+                                the United
+                                States. Immigration
+                                policies and practices in the U.S. have been a subject of debate and contention. Some
+                                argue that
+                                restrictive immigration
+                                policies have run counter to the statue's message of inclusivity, while others believe
+                                that national
+                                security concerns
+                                must be balanced with humanitarian values.</p>
+                            <h5>4. Diplomacy and International Relations:</h5>
+                            <p>The statue also symbolizes international friendship and cooperation. The U.S. has a role
+                                in global
+                                diplomacy and
+                                international relations, and its approach to foreign policy can impact perceptions of
+                                its commitment to
+                                these values.
+                                Some may argue that certain foreign policies and actions have strained international
+                                relationships and
+                                raised questions
+                                about the nation's commitment to peace and diplomacy.
+                                In conclusion, whether the United States fully upholds the values represented by the
+                                Statue of Liberty
+                                is a matter of
+                                ongoing debate and interpretation. The extent to which the nation aligns with these
+                                values can vary
+                                depending on one's
+                                perspective and specific issues under consideration. Public discourse, political action,
+                                and civic
+                                engagement play
+                                crucial roles in shaping the country's trajectory in upholding these values.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            <h5>Truth matters and without it we live in a world of illusion and delusion.
+                                United we stand: divided we
+                                fall.
+                            </h5>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <h5>ChatGPT:</h5>
+                            <p>You've articulated a fundamental truth about the importance of truth itself and the unity
+                                of a nation.
+                                Truth is the
+                                cornerstone of a functioning democracy and a just society. Without truth, it becomes
+                                challenging to make
+                                informed
+                                decisions, hold leaders accountable, and foster trust among citizens. Living in a world
+                                of illusion and
+                                delusion can
+                                lead to confusion, division, and a breakdown of societal cohesion.
+                                The phrase "United we stand, divided we fall" underscores the significance of unity and
+                                solidarity among
+                                citizens. When
+                                people come together, they can address common challenges, work towards shared goals, and
+                                strengthen the
+                                bonds that hold
+                                a society together. Division, on the other hand, can weaken a nation's resilience and
+                                ability to face
+                                external and
+                                internal threats.
+                                In today's world, where information can be manipulated, and misinformation can spread
+                                rapidly, the
+                                pursuit of truth and
+                                unity becomes even more crucial. It requires a collective commitment to critical
+                                thinking,
+                                fact-checking, and open and
+                                respectful dialogue. It also calls for leaders who prioritize honesty, transparency, and
+                                the well-being
+                                of all citizens.
+                                Ultimately, a society that values truth and unity is better equipped to address its
+                                challenges, uphold
+                                its democratic
+                                principles, and work towards a future that reflects the shared aspirations and values of
+                                its people.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            <h5>How can mankind make the world a better place for all to live in harmony?</h5>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <h5>ChatGPT:</h5>
+                            <p>Creating a world that is better for all and fostering harmony among
+                                mankind is a complex and ongoing endeavor, but it's achievable
+                                through collective effort and shared values. Here are some key principles and steps that
+                                can contribute to making the world a better place:</p>
+                            <h5><span class="liberty">🗽</span> Promote Equality and Inclusivity:</h5>
+                            <p>Strive for a world where
+                                all
+                                individuals are treated with respect
+                                and
+                                dignity,
+                                regardless of their race, ethnicity, gender, religion, or socio-economic background.
+                                Advocate for
+                                policies and practices
+                                that promote equality and inclusivity.</p>
 
+                            <h5><span class="liberty">🗽</span> Peaceful Conflict Resolution:</h5>
+                            <p>Encourage peaceful dialogue
+                                and conflict
+                                resolution. Promote diplomacy
+                                and
+                                negotiations as
+                                primary tools for resolving disputes, both on an international and interpersonal level.
+                            </p>
+                            <h5><span class="liberty">🗽</span> Education and Awareness:</h5>
+                            <p>Invest in education and
+                                awareness
+                                programs
+                                that
+                                promote empathy, critical
+                                thinking, and
+                                understanding of diverse cultures and perspectives. Education can be a powerful tool for
+                                breaking
+                                down
+                                stereotypes and
+                                prejudices.</p>
+                            <h5><span class="liberty">🗽</span> Environmental Sustainability: </h5>
+                            <p>Address environmental
+                                challenges by
+                                adopting sustainable practices,
+                                reducing waste, and
+                                mitigating climate change. A healthy planet is essential for the well-being of all
+                                living creatures.
+                            </p>
+                            <h5><span class="liberty">🗽</span> Humanitarian Efforts:</h5>
+                            <p> Support humanitarian organizations
+                                and
+                                initiatives
+                                that provide aid and
+                                assistance
+                                to vulnerable
+                                populations, whether they are affected by conflict, natural disasters, or poverty.</p>
 
-            <section class="last">
-                <h4>How can mankind make the world a better place for all to live in harmony?</h4>
-                <h5>ChatGPT:</h5>
-                <p>Creating a world that is better for all and fostering harmony among
-                    mankind is a complex and ongoing endeavor, but it's achievable
-                    through collective effort and shared values. Here are some key principles and steps that
-                    can contribute to making the world a better place:</p>
-                <h5><span class="liberty">🗽</span> Promote Equality and Inclusivity:</h5>
-                <p>Strive for a world where
-                    all
-                    individuals are treated with respect
-                    and
-                    dignity,
-                    regardless of their race, ethnicity, gender, religion, or socio-economic background. Advocate for
-                    policies and practices
-                    that promote equality and inclusivity.</p>
+                            <h5><span class="liberty">🗽</span> Social Justice and Human Rights:</h5>
+                            <p> Advocate for the
+                                protection of human
+                                rights and social justice. Work
+                                towards ending
+                                discrimination, systemic inequalities, and any form of injustice.</p>
 
-                <h5><span class="liberty">🗽</span> Peaceful Conflict Resolution:</h5>
-                <p>Encourage peaceful dialogue
-                    and conflict
-                    resolution. Promote diplomacy
-                    and
-                    negotiations as
-                    primary tools for resolving disputes, both on an international and interpersonal level.</p>
-                <h5><span class="liberty">🗽</span> Education and Awareness:</h5>
-                <p>Invest in education and
-                    awareness
-                    programs
-                    that
-                    promote empathy, critical
-                    thinking, and
-                    understanding of diverse cultures and perspectives. Education can be a powerful tool for breaking
-                    down
-                    stereotypes and
-                    prejudices.</p>
-                <h5><span class="liberty">🗽</span> Environmental Sustainability: </h5>
-                <p>Address environmental
-                    challenges by
-                    adopting sustainable practices,
-                    reducing waste, and
-                    mitigating climate change. A healthy planet is essential for the well-being of all living creatures.
-                </p>
-                <h5><span class="liberty">🗽</span> Humanitarian Efforts:</h5>
-                <p> Support humanitarian organizations
-                    and
-                    initiatives
-                    that provide aid and
-                    assistance
-                    to vulnerable
-                    populations, whether they are affected by conflict, natural disasters, or poverty.</p>
+                            <h5><span class="liberty">🗽</span> Civic Engagement:</h5>
+                            <p> Participate in civic activities,
+                                including voting,
+                                peaceful protests, and community
+                                service. Engaging
+                                in the democratic process can influence policy decisions and promote positive change.
+                            </p>
 
-                <h5><span class="liberty">🗽</span> Social Justice and Human Rights:</h5>
-                <p> Advocate for the
-                    protection of human
-                    rights and social justice. Work
-                    towards ending
-                    discrimination, systemic inequalities, and any form of injustice.</p>
+                            <h5><span class="liberty">🗽</span> Promote Dialogue:</h5>
+                            <p> Encourage open and respectful dialogue
+                                among
+                                individuals and groups with differing
+                                viewpoints. Seek
+                                common ground and solutions that benefit the greater good.</p>
 
-                <h5><span class="liberty">🗽</span> Civic Engagement:</h5>
-                <p> Participate in civic activities,
-                    including voting,
-                    peaceful protests, and community
-                    service. Engaging
-                    in the democratic process can influence policy decisions and promote positive change.</p>
+                            <h5><span class="liberty">🗽</span> International Cooperation:</h5>
+                            <p> Support international
+                                cooperation and
+                                collaboration to address global
+                                challenges such as
+                                poverty, disease, and climate change. Multilateral efforts can have a far-reaching
+                                impact.</p>
 
-                <h5><span class="liberty">🗽</span> Promote Dialogue:</h5>
-                <p> Encourage open and respectful dialogue
-                    among
-                    individuals and groups with differing
-                    viewpoints. Seek
-                    common ground and solutions that benefit the greater good.</p>
+                            <h5><span class="liberty">🗽</span> Lead by Example:</h5>
+                            <p> As individuals, strive to embody the
+                                values and
+                                principles you wish to see in the
+                                world.
+                                Be a positive
+                                influence in your community and inspire others through your actions.</p>
 
-                <h5><span class="liberty">🗽</span> International Cooperation:</h5>
-                <p> Support international
-                    cooperation and
-                    collaboration to address global
-                    challenges such as
-                    poverty, disease, and climate change. Multilateral efforts can have a far-reaching impact.</p>
+                            <h5><span class="liberty">🗽</span> Raise Future Generations with Values:</h5>
+                            <p> Instill values of
+                                empathy,
+                                kindness, and tolerance in the next
+                                generation. Teach
+                                them the importance of being responsible global citizens.</p>
 
-                <h5><span class="liberty">🗽</span> Lead by Example:</h5>
-                <p> As individuals, strive to embody the
-                    values and
-                    principles you wish to see in the
-                    world.
-                    Be a positive
-                    influence in your community and inspire others through your actions.</p>
+                            <h5><span class="liberty">🗽</span> Hold Leaders Accountable:</h5>
+                            <p> Hold leaders, both in
+                                government
+                                and the
+                                private sector, accountable for
+                                their actions and
+                                decisions. Demand transparency, ethical behavior, and a commitment to the common good.
+                                Creating a better world for all to live in harmony requires sustained effort and a
+                                willingness to
+                                confront challenges
+                                and injustices. It is a collective endeavor that requires the active participation of
+                                individuals,
+                                communities,
+                                organizations, and nations. By working together with a shared commitment to these
+                                principles,
+                                humanity
+                                can move closer
+                                to realizing a world of greater harmony and prosperity for all.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <h5><span class="liberty">🗽</span> Raise Future Generations with Values:</h5>
-                <p> Instill values of
-                    empathy,
-                    kindness, and tolerance in the next
-                    generation. Teach
-                    them the importance of being responsible global citizens.</p>
-
-                <h5><span class="liberty">🗽</span> Hold Leaders Accountable:</h5>
-                <p> Hold leaders, both in
-                    government
-                    and the
-                    private sector, accountable for
-                    their actions and
-                    decisions. Demand transparency, ethical behavior, and a commitment to the common good.
-                    Creating a better world for all to live in harmony requires sustained effort and a willingness to
-                    confront challenges
-                    and injustices. It is a collective endeavor that requires the active participation of individuals,
-                    communities,
-                    organizations, and nations. By working together with a shared commitment to these principles,
-                    humanity
-                    can move closer
-                    to realizing a world of greater harmony and prosperity for all.</p>
-            </section>
         </div>
         <section id="parallax-grid">
             <div class="parallax-grid">
@@ -782,12 +876,12 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
