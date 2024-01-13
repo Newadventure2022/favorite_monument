@@ -75,6 +75,7 @@
         }
 
         .container {
+            border: red solid 3px;
             max-width: 1100px;
             overflow-x: hidden;
             background-color: var(--primary-color);
@@ -206,16 +207,16 @@
         .parallax-sections-3 {
             position: relative;
             width: 100%;
-            height: 100vh;
+            height: 80vh;
         }
 
         .parallax-child-section-3 {
             clip: rect(0, auto, auto, 0);
             position: absolute;
             top: 50;
-            left: 50;
+            left: 0;
             width: 100%;
-            height: 100vh;
+            height: 100%;
         }
 
         #frontlashID-3 {
@@ -235,12 +236,28 @@
             background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/350/original/Celia_Corona-Doran.1.png?1705129582);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 80%;
         }
 
         .text-wrapper {
             position: relative;
             text-align: center;
+            z-index: -1;
+        }
+
+
+
+        .image-credit {
+            color: var(--third-color);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            top: 85%;
+            left: 10%;
+            right: 10%;
+            position: absolute;
+            text-shadow: var(--text-shadow);
         }
 
         .history {
@@ -264,7 +281,6 @@
             opacity: 1;
         }
 
-
         .history-2,
         .history-3 {
             font-family: abhaya;
@@ -274,16 +290,11 @@
             font-size: 20px;
         }
 
-
         .history-3 {
-            margin-top: 30rem;
+            margin-top: 48rem;
         }
 
-        .image-credit {
-            font-size: 12px;
-            margin-top: 1.5rem;
-            text-align: right;
-        }
+
 
         .parallax-grid {
             color: var(--third-color);
@@ -291,7 +302,7 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
             max-width: 100%;
-            margin: 0 3rem;
+            margin: 3rem;
             text-align: center;
         }
 
@@ -340,7 +351,7 @@
         .credit {
             color: var(--third-color);
             font-size: 1rem;
-            padding-top: 1rem;
+            padding: 1rem 0;
             text-align: center;
         }
 
@@ -406,11 +417,7 @@
 
             }
 
-            .image-credit {
-                font-size: 12px;
-                margin-top: 0;
-                text-align: right;
-            }
+
         }
 
         @media (max-width: 390px) {
@@ -519,14 +526,15 @@
         <div class="parallax-section-3">
             <div class="parallax-child-section-3">
                 <section class="fw-main-row-3" id="frontlashID-3">
+                    <div class="image-credit">
+                        <h6>Image Credit: The Statue of Liberty & World Harmony Created by Celia
+                            Corona-Doran w/ DALL.E</h6>
+                    </div>
                 </section>
             </div>
         </div>
 
         <div class="history-3">
-            <div class="image-credit">
-                <p>Image Credit: The Statue of Liberty & World Harmony Created by Celia Corona-Doran w/ DALL.E</p>
-            </div>
             <h3>Question: </h3>
             <h4>Do you think the United States of America is upholding the values for which the Statue of
                 liberty stands?</h4>
