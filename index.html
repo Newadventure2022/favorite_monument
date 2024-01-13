@@ -179,7 +179,7 @@
         #frontlashID-2 p {
             color: var(--third-color);
             font-family: var(--third-font);
-            opacity: 0.7;
+            opacity: 0.8;
             text-shadow: var(--text-shadow);
         }
 
@@ -195,17 +195,52 @@
             z-index: 1;
         }
 
-        .text-wrapper {
-            position: relative;
-            text-align: center;
-        }
-
         .fw-main-row-2 {
             background-attachment: scroll;
             background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/134/original/istockphoto-93460059-612x612.jpg?1704981461);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+        }
+
+        .parallax-sections-3 {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .parallax-child-section-3 {
+            clip: rect(0, auto, auto, 0);
+            position: absolute;
+            top: 50;
+            left: 50;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #frontlashID-3 {
+            position: fixed;
+            display: block;
+            top: 1rem;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: translateZ(0);
+            will-change: transform;
+            z-index: 1;
+        }
+
+        .fw-main-row-3 {
+            background-attachment: scroll;
+            background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/350/original/Celia_Corona-Doran.1.png?1705129582);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 90%;
+        }
+
+        .text-wrapper {
+            position: relative;
+            text-align: center;
         }
 
         .history {
@@ -218,7 +253,7 @@
 
         .history p,
         .history-2 p {
-            opacity: .7;
+            opacity: .8;
         }
 
         .liberty {
@@ -229,13 +264,9 @@
             opacity: 1;
         }
 
-        .list {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-        }
 
-        .history-2 {
+        .history-2,
+        .history-3 {
             font-family: abhaya;
             padding: 7rem 3rem 3rem 2rem;
             width: 100%;
@@ -243,6 +274,16 @@
             font-size: 20px;
         }
 
+
+        .history-3 {
+            margin-top: 30rem;
+        }
+
+        .image-credit {
+            font-size: 12px;
+            margin-top: 1.5rem;
+            text-align: right;
+        }
 
         .parallax-grid {
             color: var(--third-color);
@@ -298,8 +339,8 @@
 
         .credit {
             color: var(--third-color);
-            font-size: small;
-            padding-top: 2rem;
+            font-size: 1rem;
+            padding-top: 1rem;
             text-align: center;
         }
 
@@ -460,37 +501,17 @@
                 towards a better, more harmonious global community where these principles are upheld for all of mankind.
             </p>
         </div>
-        <section id="parallax-grid">
-            <div class="parallax-grid">
-                <div class="parallax-box-1"><img class="pb-3"
-                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/133/original/DALL%C2%B7E-Statue_of_Liberty-1.png?1704981431"
-                        alt="Staute of Liberty" title="Image Credit: Celia Corona-Doran">
-                    <a class="parallax-links" href="https://www.statueofliberty.org/statue-of-liberty/overview-history/"
-                        target="_blank" title="Link to The statueofliberty.org">
-                        Overview & History
-                    </a>
-
-                </div>
-                <div class="parallax-box-2"><img class="pb-3"
-                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/140/original/statue_of_liberty-1.jpg?1704982344"
-                        alt="Staute of Liberty" title="Photo Credit:iStock.com/id/527044232">
-                    <a class="parallax-links" href="https://www.nps.gov/stli/index.htm" target="_blank"
-                        title="Link to the National Park Service">
-                        National Park
-                    </a>
-                </div>
-                <div class=" parallax-box-3"><img class="pb-3"
-                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/141/original/statue_of_liberty-2.jpg?1704982420"
-                        alt="Staute of Liberty" title="Photo Credit:iStock.com/id/93460059">
-                    <a class="parallax-links"
-                        href="https://www.tripadvisor.com/Attraction_Review-g60763-d103887-Reviews-Statue_of_Liberty-New_York_City_New_York.html"
-                        target="_blank" title="Link to the Trip Advisor">
-                        Travel
-                    </a>
-                </div>
+        <div class="parallax-section-3">
+            <div class="parallax-child-section-3">
+                <section class="fw-main-row-3" id="frontlashID-3">
+                </section>
             </div>
-        </section>
-        <div class="history-2">
+        </div>
+
+        <div class="history-3">
+            <div class="image-credit">
+                <p>Image Credit: The Statue of Liberty & World Harmony Created by Celia Corona-Doran w/ DALL.E</p>
+            </div>
             <h3>Question: </h3>
             <h4>Do you think the United States of America is upholding the values for which the Statue of
                 liberty stands?</h4>
@@ -572,20 +593,16 @@
                 its democratic
                 principles, and work towards a future that reflects the shared aspirations and values of its people.</p>
 
-            <h4>How can mankind make the world a better place for all to live in harmony?</h4>
-            <h5>ChatGPT:</h5>
-            <div class="list"><span class="liberty">🗽</span>
-                <p>1. Creating a world that is better for all and fostering harmony among
-                    mankind is a
-                    complex and ongoing
-                    endeavor, but it's
-                    achievable through collective effort and shared values. Here are some key principles and steps that
-                    can
-                    contribute to
-                    making the world a better place:</p>
-            </div>
-            <div class="list"><span class="liberty">🗽</span>
-                <p>2. Promote Equality and Inclusivity: Strive for a world where
+
+            <section class="last">
+                <h4>How can mankind make the world a better place for all to live in harmony?</h4>
+                <h5>ChatGPT:</h5>
+                <p>Creating a world that is better for all and fostering harmony among
+                    mankind is a complex and ongoing endeavor, but it's achievable
+                    through collective effort and shared values. Here are some key principles and steps that
+                    can contribute to making the world a better place:</p>
+                <h5><span class="liberty">🗽</span> Promote Equality and Inclusivity:</h5>
+                <p>Strive for a world where
                     all
                     individuals are treated with respect
                     and
@@ -593,17 +610,16 @@
                     regardless of their race, ethnicity, gender, religion, or socio-economic background. Advocate for
                     policies and practices
                     that promote equality and inclusivity.</p>
-            </div>
-            <div class="list"><span class="liberty">🗽</span>
-                <p>3. Peaceful Conflict Resolution: Encourage peaceful dialogue
+
+                <h5><span class="liberty">🗽</span> Peaceful Conflict Resolution:</h5>
+                <p>Encourage peaceful dialogue
                     and conflict
                     resolution. Promote diplomacy
                     and
                     negotiations as
                     primary tools for resolving disputes, both on an international and interpersonal level.</p>
-            </div>
-            <div class="list"><span class="liberty">🗽</span>
-                <p>4. Education and Awareness: Invest in education and
+                <h5><span class="liberty">🗽</span> Education and Awareness:</h5>
+                <p>Invest in education and
                     awareness
                     programs
                     that
@@ -613,69 +629,67 @@
                     down
                     stereotypes and
                     prejudices.</p>
-            </div>
-            <div class="list"><span class="liberty">🗽</span>
-                <p>5. Environmental Sustainability: Address environmental
+                <h5><span class="liberty">🗽</span> Environmental Sustainability: </h5>
+                <p>Address environmental
                     challenges by
                     adopting sustainable practices,
                     reducing waste, and
                     mitigating climate change. A healthy planet is essential for the well-being of all living creatures.
                 </p>
-            </div>
-            <div class="list"><span class="liberty">🗽</span>
-                <p>6. Humanitarian Efforts: Support humanitarian organizations
+                <h5><span class="liberty">🗽</span> Humanitarian Efforts:</h5>
+                <p> Support humanitarian organizations
                     and
                     initiatives
                     that provide aid and
                     assistance
                     to vulnerable
                     populations, whether they are affected by conflict, natural disasters, or poverty.</p>
-            </div>
-            <div class="list"><span class="liberty">🗽</span>
-                <p>7. Social Justice and Human Rights: Advocate for the
+
+                <h5><span class="liberty">🗽</span> Social Justice and Human Rights:</h5>
+                <p> Advocate for the
                     protection of human
                     rights and social justice. Work
                     towards ending
                     discrimination, systemic inequalities, and any form of injustice.</p>
-            </div>
-            <div class="list"><span class="liberty">🗽</span>
-                <p>8. Civic Engagement: Participate in civic activities,
+
+                <h5><span class="liberty">🗽</span> Civic Engagement:</h5>
+                <p> Participate in civic activities,
                     including voting,
                     peaceful protests, and community
                     service. Engaging
                     in the democratic process can influence policy decisions and promote positive change.</p>
-            </div>
-            <div class="list"><span class="liberty">🗽</span>
-                <p>9. Promote Dialogue: Encourage open and respectful dialogue
+
+                <h5><span class="liberty">🗽</span> Promote Dialogue:</h5>
+                <p> Encourage open and respectful dialogue
                     among
                     individuals and groups with differing
                     viewpoints. Seek
                     common ground and solutions that benefit the greater good.</p>
-            </div>
-            <div class="list"><span class="liberty">🗽</span>
-                <p>10. International Cooperation: Support international
+
+                <h5><span class="liberty">🗽</span> International Cooperation:</h5>
+                <p> Support international
                     cooperation and
                     collaboration to address global
                     challenges such as
                     poverty, disease, and climate change. Multilateral efforts can have a far-reaching impact.</p>
-            </div>
-            <div class="list"><span class="liberty">🗽</span>
-                <p>11. Lead by Example: As individuals, strive to embody the
+
+                <h5><span class="liberty">🗽</span> Lead by Example:</h5>
+                <p> As individuals, strive to embody the
                     values and
                     principles you wish to see in the
                     world.
                     Be a positive
                     influence in your community and inspire others through your actions.</p>
-            </div>
-            <div class="list"><span class="liberty">🗽</span>
-                <p>12. Raise Future Generations with Values: Instill values of
+
+                <h5><span class="liberty">🗽</span> Raise Future Generations with Values:</h5>
+                <p> Instill values of
                     empathy,
                     kindness, and tolerance in the next
                     generation. Teach
                     them the importance of being responsible global citizens.</p>
-            </div>
-            <div class="list"><span class="liberty">🗽</span>
-                <p>13. Hold Leaders Accountable: Hold leaders, both in
+
+                <h5><span class="liberty">🗽</span> Hold Leaders Accountable:</h5>
+                <p> Hold leaders, both in
                     government
                     and the
                     private sector, accountable for
@@ -689,8 +703,38 @@
                     humanity
                     can move closer
                     to realizing a world of greater harmony and prosperity for all.</p>
-            </div>
+            </section>
         </div>
+        <section id="parallax-grid">
+            <div class="parallax-grid">
+                <div class="parallax-box-1"><img class="pb-3"
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/133/original/DALL%C2%B7E-Statue_of_Liberty-1.png?1704981431"
+                        alt="Staute of Liberty" title="Image Credit: Celia Corona-Doran">
+                    <a class="parallax-links" href="https://www.statueofliberty.org/statue-of-liberty/overview-history/"
+                        target="_blank" title="Link to The statueofliberty.org">
+                        Overview & History
+                    </a>
+
+                </div>
+                <div class="parallax-box-2"><img class="pb-3"
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/140/original/statue_of_liberty-1.jpg?1704982344"
+                        alt="Staute of Liberty" title="Photo Credit:iStock.com/id/527044232">
+                    <a class="parallax-links" href="https://www.nps.gov/stli/index.htm" target="_blank"
+                        title="Link to the National Park Service">
+                        National Park
+                    </a>
+                </div>
+                <div class=" parallax-box-3"><img class="pb-3"
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/141/original/statue_of_liberty-2.jpg?1704982420"
+                        alt="Staute of Liberty" title="Photo Credit:iStock.com/id/93460059">
+                    <a class="parallax-links"
+                        href="https://www.tripadvisor.com/Attraction_Review-g60763-d103887-Reviews-Statue_of_Liberty-New_York_City_New_York.html"
+                        target="_blank" title="Link to the Trip Advisor">
+                        Travel
+                    </a>
+                </div>
+            </div>
+        </section>
     </div>
     <footer>
         <div id="social-links" class="social-links d-flex justify-content-center">
@@ -704,7 +748,7 @@
                 <i class="fa-solid fa-computer"></i>
             </a>
         </div>
-        <div class="credit">2023. Designed & Developed by
+        <div class="credit"> Designed & Developed by
             <a href="https://www.shecodes.io/graduates/53702-cecelia-corona-doran" target="_blank" rel="noreferrer"
                 title="Link to Celia's SheCodes Profile">
                 <span> Celia Corona-Doran 👩🏾‍💻</span>
@@ -712,6 +756,7 @@
                 rel="noreferrer" title="Link to Celia's SheCodes Profile">
                 <span> SheCodes 🗽 Favorite Monument Challenge</span>
             </a>
+            <div>&copy; 2024.</div>
         </div>
     </footer>
 
