@@ -27,7 +27,7 @@
             --fifth-color: #f6d677;
             --text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
             --box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-            --bs-accordion-btn-color: var(#f6d677);
+
         }
 
         *,
@@ -306,6 +306,10 @@
             background: var(--third-color);
         }
 
+        .accordion-body {
+            margin: 0 auto;
+        }
+
         .parallax-grid {
             color: var(--third-color);
             display: grid;
@@ -553,12 +557,11 @@
         </div>
 
         <div class="history-3">
-            <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                            aria-controls="panelsStayOpen-collapseOne">
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <h5>
                                 Do you think the United States of America is upholding the values for which the Statue
                                 of
@@ -566,7 +569,7 @@
                             </h5>
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <h5>ChatGPT:</h5>
 
@@ -641,15 +644,14 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseTwo">
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             <h5>Truth matters and without it we live in a world of illusion and delusion.
                                 United we stand: divided we
                                 fall.
                             </h5>
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <h5>ChatGPT:</h5>
                             <p>You've articulated a fundamental truth about the importance of truth itself and the unity
@@ -692,12 +694,11 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseThree">
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             <h5>How can mankind make the world a better place for all to live in harmony?</h5>
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <h5>ChatGPT:</h5>
                             <p>Creating a world that is better for all and fostering harmony among
